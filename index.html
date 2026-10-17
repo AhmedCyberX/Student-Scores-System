@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Scores System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Student Scores System</h1>
+        <p class="info">Page Background Color:</p>
+        <button id="whiteBtn">White</button>
+        <button id="grayBtn">Gray</button>
+        <button id="yellowBtn">Yellow</button>
+        <h2>Add Student Score</h2>
+        <form id="scoreForm">
+            <input id="studentName" type="text" placeholder="Enter student name" autocomplete="off" autofocus>
+            <input id="studentScore" type="text" placeholder="Enter score (0 - 100)" autocomplete="off">
+            <button type="submit">Add Student</button>
+        </form>
+        <p id="message"></p>
+        <h2>Class Statistics</h2>
+        <div id="statsBox">
+            <p id="countText">Total Students: 0</p>
+            <p id="sumText">Sum of Scores: 0</p>
+            <p id="avgText">Average Score: 0</p>
+            <p id="maxText">Highest Score: 0</p>
+            <p id="minText">Lowest Score: 0</p>
+            <p id="passText">Passed Students (>= 50): 0</p>
+        </div>
+        <h2>Search and Manage Students</h2>
+        <input id="searchInput" type="text" placeholder="Search student by name" autocomplete="off">
+        <button id="sortBtn">Sort by Score</button>
+        <button id="reverseBtn">Reverse Order</button>
+        <button id="removeLastBtn">Remove Last</button>
+        <ul id="studentList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
